@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# 102-magic_calculation.py
-
+# Me
 
 def magic_calculation(a, b, c):
     """Match bytecode provided by Holberton School."""
@@ -8,3 +7,4 @@ def magic_calculation(a, b, c):
         return (c)
     if c > b:
         return (a + b)
+    return (a*b - c)
