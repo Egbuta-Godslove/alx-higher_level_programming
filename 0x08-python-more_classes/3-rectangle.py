@@ -2,12 +2,12 @@
 """
 Defines a class Rectangle
 """
-"""ALX Task on OOP"""
+"""ALX task on OOP"""
 
 class Rectangle:
     """Representation of a rectangle"""
     def __init__(self, width=0, height=0):
-        """initializing the rectangle by
+        """starting methodof the rectangle by
         setting the objet with width and height
         """
         self.width = width
@@ -15,7 +15,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Getter method for width"""
+        """Getter method for  width"""
         return self.__width
 
     @width.setter
@@ -42,19 +42,19 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """The area of the rectangle"""
-        return self.width * self.height
+        """returns the area of the rectangle"""
+        return 2 * (self.width + self.height)
 
     def perimeter(self):
         """returns the perimeter of the rectangle"""
         if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (self.width + self.height)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """returns print rectangle"""
+        """returns printable string representation of the rectangle"""
         string = ""
-	if self.width != 0 and self.height != 0:
-	    string += "\n".join("#" * self.width
-			    for j in range(self.height))
-	return string
+        if self.__width != 0 and self.__height != 0:
+            string += "\n".join("#" * self.__width
+                                for j in range(self.__height))
+        return string
