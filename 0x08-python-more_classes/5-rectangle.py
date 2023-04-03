@@ -8,6 +8,10 @@ class Rectangle:
         """init method """
         self.width = width
         self.height = heigt
+    
+    def __del__(self):
+	"""del method"""
+	print("Bye rectangle...")
 
     @property
     def width(self):
@@ -58,7 +62,3 @@ class Rectangle:
     def __repr__(self):
         """returns a string representation of the rectangle for reproduction"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-
-    def __del__(self):
-	"""del method"""
-	print("Bye rectangle...")	
