@@ -23,7 +23,6 @@ Why Python programming is awesome
 * The first line of all your files should be exactly #!/usr/bin/python3
 =======
 * The first line of all your files should be exactly `#!/usr/bin/python3`
->>>>>>> 254c2c3241a83f39159f5b4869613d4db8da7c6a
 * A README.md file, at the root of the folder of the project, is mandatory
 * Your code should use the pycodestyle `(version 2.8.*)`
 * All your files must be executable
