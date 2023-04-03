@@ -1,17 +1,21 @@
 #!/usr/bin/python3
-"""Module with Rectangle class"""
+"""
+Module with Rectangle class
+"""
 
 
 class Rectangle:
     """Rectangle class"""
     def __init__(self, width=0, height=0):
-        """init method """
+        """
+        init method
+        """
         self.width = width
-        self.height = heigt
-    
+        self.height = height
+
     def __del__(self):
-	"""del method"""
-	print("Bye rectangle...")
+        """prints a string when an instance has been deleted"""
+        print("Bye rectangle...")
 
     @property
     def width(self):
@@ -21,7 +25,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """width setter"""
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -29,13 +33,13 @@ class Rectangle:
 
     @property
     def height(self):
-        """height height"""
+        """height getter"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """height setter"""
-        if not isinstance(value, int):
+ 	"""height setter"""
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -47,12 +51,12 @@ class Rectangle:
 
     def perimeter(self):
         """perimeter method"""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.width + self.height)
+        return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """str method"""
+        """returns printable string representation of the rectangle"""
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
