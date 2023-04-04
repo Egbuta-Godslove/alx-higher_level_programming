@@ -1,0 +1,52 @@
+def say_my_name(first_name, last_name=""):
+    """
+        Prints My name is <first_name> <last_name>
+        Args:
+            first_name: first string
+            last_name: second string
+    """
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
+
+    print("My name is {} {}".format(first_name, last_name))
+
+
+# Test cases
+# Test case 1: Valid input
+say_my_name("John", "Doe")  # Output: My name is John Doe
+
+# Test case 2: Valid input with empty last name
+say_my_name("Alice")  # Output: My name is Alice 
+
+# Test case 3: Invalid input - first_name is not a string
+try:
+    say_my_name(123, "Doe")
+except TypeError as e:
+    assert str(e) == "first_name must be a string"
+
+# Test case 4: Invalid input - last_name is not a string
+try:
+    say_my_name("John", 123)
+except TypeError as e:
+    assert str(e) == "last_name must be a string"
+
+# Test case 5: Valid input with special characters
+say_my_name("Emma", "@#$%")  # Output: My name is Emma @#$%
+
+# Test case 6: Valid input with only last_name
+say_my_name("", "Smith")  # Output: My name is  Smith
+
+# Test case 7: Invalid input - first_name is None
+try:
+    say_my_name(None, "Doe")
+except TypeError as e:
+    assert str(e) == "first_name must be a string"
+
+# Test case 8: Invalid input - last_name is None
+try:
+    say_my_name("John", None)
+except TypeError as e:
+    assert str(e) == "last_name must be a string"
+
