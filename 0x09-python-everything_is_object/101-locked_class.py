@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+ALX task on OOP
+"""
+
 
 class LockedClass:
-    __slots__ = ('__first_name')
+    """ locked class """
+    # available slots that can be created
+    __slots__ = ('first_name')
