@@ -1,0 +1,31 @@
+def test_text_indentation():
+    # Test normal input
+    text = "This is a test. Is it working? I hope so: fingers crossed!"
+    expected_output = "This is a test.\n\nIs it working?\n\nI hope so:\n\nfingers crossed!\n"
+    assert text_indentation(text) == expected_output
+    
+    # Test empty string input
+    text = ""
+    expected_output = ""
+    assert text_indentation(text) == expected_output
+    
+    # Test input with no special characters
+    text = "This is a test without special characters"
+    expected_output = "This is a test without special characters"
+    assert text_indentation(text) == expected_output
+    
+    # Test input with only one sentence
+    text = "This is one sentence."
+    expected_output = "This is one sentence.\n"
+    assert text_indentation(text) == expected_output
+    
+    # Test input with only special characters
+    text = "?.:"
+    expected_output = "\n\n\n"
+    assert text_indentation(text) == expected_output
+    
+    # Test input with non-string argument
+    text = 1234
+    expected_output = TypeError
+    assert text_indentation(text) == expected_output
+
