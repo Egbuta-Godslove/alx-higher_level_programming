@@ -7,9 +7,9 @@ class SortedList(list):
     to print the sorted list.
     """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
         """Initialize the list."""
-        super().__init__(*args, **kwargs)
+        super().__init__()
 
     def print_sorted(self):
         """Print the sorted list."""
