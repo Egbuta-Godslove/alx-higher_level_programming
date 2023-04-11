@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 class SortedList(list):
     """
     A custom list class that inherits from the built-in list and adds
