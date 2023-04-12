@@ -1,25 +1,19 @@
 #!/usr/bin/python3
 """
-This module contains the function is_instance_of_class.
+This is a module container of the function 2-is_same_class
 """
 
 
-def is_instance_of_class(instance, class_type):
-
+def is_instance_class(obj, a_class):
     """
-    This function checks if the given instance is an
-    instance of the specified class.
-
-    Args:
-    instance: The instance to check
-    class_type: The class to check against
-:wq
-
-    Returns:
-    True if the instance is an instance of the specified class,
-    False otherwise.
+    To check if the object is exactly an instance of the specified class
+        Args:
+            obj: initial object
+            a_class: class to confirm with the object
+            Returns: True if object is an exactly the instance of the class
+                     or False if not
     """
-    if type(instance) is not class_type:
+    if type(obj) is not a_class:
         return False
     else:
         return True
