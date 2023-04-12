@@ -1,17 +1,16 @@
 #!/usr/bin/python3
+"""
+The container of MyList class inherit from list
+"""
+"""OOP task"""
+
 
 class MyList(list):
-    """
-    A subclass of list that represents a custom list
-    """
+    """MyList class that inherits from list"""
     def __init__(self):
-        """
-        Initializes an instance of MyList
-        """
+        """To initialize the object"""
         super().__init__()
 
-    def print_sorted_list(self):
-        """
-        Prints the sorted list
-        """
+    def print_sorted(self):
+        """prints the sorted list"""
         print(sorted(self))
