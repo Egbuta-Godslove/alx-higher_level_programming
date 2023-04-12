@@ -2,7 +2,7 @@
 """
 This is a module container of the function 2-is_same_class
 """
-"""ALX task on OOP"""
+
 
 def is_same_class(obj, a_class):
     """
