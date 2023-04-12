@@ -4,6 +4,7 @@ Contains definition of class MyInt
 """
 """OOP task"""
 
+
 class MyInt(int):
     """Definition of class MyInt that inherits from class int"""
 
