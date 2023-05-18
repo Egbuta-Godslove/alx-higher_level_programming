@@ -1,6 +1,7 @@
 ## 0x0D. SQL - Introduction
 `SQL` `MySQL`
 
+![sql](https://github.com/Egbuta-Godslove/alx-higher_level_programming/assets/118941659/f2fa2267-239b-41df-9b4d-9a57cacf9829)
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
