@@ -4,11 +4,11 @@
 
 ## Background Context
 JavaScript is used for many things. Here, you will use JavaScript for 2 reasons:
-![java script](https://github.com/Egbuta-Godslove/alx-higher_level_programming/assets/118941659/cc740fc8-a2e8-48ed-a186-c549a67c92c6)
 
 Scripting (same as we did with Python)
 Web front-end
 For the moment, and for learning all basic concepts of this language, we will do some scripting. After, we will make our AirBnB project dynamic by using Javascript and JQuery.
+![java script](https://github.com/Egbuta-Godslove/alx-higher_level_programming/assets/118941659/cc740fc8-a2e8-48ed-a186-c549a67c92c6)
 
 
 ## Learning Objectives
