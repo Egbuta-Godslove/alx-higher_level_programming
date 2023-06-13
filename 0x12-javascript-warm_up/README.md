@@ -4,6 +4,7 @@
 
 ## Background Context
 JavaScript is used for many things. Here, you will use JavaScript for 2 reasons:
+![java script](https://github.com/Egbuta-Godslove/alx-higher_level_programming/assets/118941659/cc740fc8-a2e8-48ed-a186-c549a67c92c6)
 
 Scripting (same as we did with Python)
 Web front-end
